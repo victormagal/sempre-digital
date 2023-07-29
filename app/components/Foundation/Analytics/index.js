@@ -6,7 +6,13 @@ export default function Analytics() {
     <>
       <noscript>
         <iframe
-          src="https://www.googletagmanager.com/ns.html?id=GTM-N8Z66M2"
+          src="https://www.googletagmanager.com/ns.html?id=GTM-PVLS973T"
+          height="0"
+          width="0"
+          style={{ display: 'none', visibility: 'hidden' }}
+        />
+        <iframe
+          src="https://www.googletagmanager.com/gtag/js?id=G-RGW3B05WFT"
           height="0"
           width="0"
           style={{ display: 'none', visibility: 'hidden' }}
@@ -20,7 +26,17 @@ export default function Analytics() {
           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
           j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','G-RGW3B05WFT');`
+          })(window,document,'script','dataLayer','GTM-PVLS973T'');`
+        }}
+      />
+      <Script
+        id="gtag-script"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+          gtag('js', new Date());
+          gtag('config', 'G-RGW3B05WFT');`
         }}
       />
       <Script
