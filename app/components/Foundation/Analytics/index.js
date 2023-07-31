@@ -47,7 +47,7 @@ export default function Analytics() {
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
             t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
             y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-          })(window, document, "clarity", "script", "58acgh3ffd");`
+          })(window, document, "clarity", "script", "i7wbdn6v80");`
         }}
       />
     </>
