@@ -11,12 +11,6 @@ export default function Analytics() {
           width="0"
           style={{ display: 'none', visibility: 'hidden' }}
         />
-        {/* <iframe
-          src="https://www.googletagmanager.com/gtag/js?id=G-RGW3B05WFT"
-          height="0"
-          width="0"
-          style={{ display: 'none', visibility: 'hidden' }}
-        /> */}
       </noscript>
       <Script
         id="gtm-script"
@@ -29,16 +23,6 @@ export default function Analytics() {
           })(window,document,'script','dataLayer','GTM-PVLS973T');`
         }}
       />
-      {/* <Script
-        id="gtag-script"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `window.dataLayer = window.dataLayer || [];
-          function gtag() { dataLayer.push(arguments); }
-          gtag('js', new Date());
-          gtag('config', 'G-RGW3B05WFT');`
-        }}
-      /> */}
       <Script
         id="clarity-script"
         strategy="afterInteractive"
